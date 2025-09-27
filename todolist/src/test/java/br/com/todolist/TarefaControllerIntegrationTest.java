@@ -1,5 +1,5 @@
 
-package br.com.todolist.controller;
+package br.com.todolist;
 
 import br.com.todolist.model.Tarefa;
 import br.com.todolist.repository.TarefaRepository;
