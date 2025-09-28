@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/api/tarefas") // Define o prefixo da URL para todos os endpoints deste controller
 public class TarefaController {

@@ -1,0 +1,115 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.task-form input,
+.task-form button {
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.task-form input:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+.task-form button {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.task-form button:hover {
+    background-color: #0056b3;
+}
+
+.task-list {
+    list-style: none;
+    padding: 0;
+}
+
+.task-item {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.task-item.concluida .task-content {
+    text-decoration: line-through;
+    color: #999;
+}
+
+.task-content {
+    flex-grow: 1;
+}
+
+.task-content h3 {
+    margin: 0 0 5px 0;
+}
+
+.task-content p {
+    margin: 0;
+    color: #666;
+}
+
+.task-actions button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: opacity 0.2s;
+}
+.task-actions button:hover {
+    opacity: 0.8;
+}
+
+.btn-toggle {
+    background-color: #28a745;
+    color: white;
+}
+.btn-edit {
+    background-color: #ffc107;
+    color: #333;
+}
+.btn-delete {
+    background-color: #dc3545;
+    color: white;
+}
