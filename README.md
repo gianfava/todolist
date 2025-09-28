@@ -26,11 +26,11 @@ Este projeto é uma aplicação web que permite aos usuários gerenciar uma list
 - **Spring Data JPA**
 - **PostgreSQL**
 - **Maven**
+- **JUnit 5 & Mockito** para testes
 
 ### Frontend
 - **React**
 - **Axios** (para chamadas HTTP)
-- **CSS** para estilização
 
 ## Como Executar o Projeto
 
@@ -121,6 +121,13 @@ A API expõe os seguintes endpoints no prefixo `/api/tarefas`:
 | `PUT`  | `/api/tarefas/{id}`| Atualiza uma tarefa existente. |
 | `DELETE`| `/api/tarefas/{id}`| Deleta uma tarefa.             |
 
+
+## Testes do Backend
+
+O projeto possui uma cobertura de testes para garantir a qualidade e o funcionamento correto da lógica de negócio e dos endpoints da API.
+
+- **Testes de Unidade**: Localizados em `TarefaServiceTest.java`, estes testes validam a lógica da camada de serviço (`TarefaService`) de forma isolada, utilizando Mockito para simular o comportamento do repositório.
+- **Testes de Integração**: Localizados em `TarefaControllerIntegrationTest.java`, estes testes validam o fluxo completo da API, desde a requisição HTTP até a resposta, simulando o comportamento real da aplicação com `MockMvc`.
 
 ## Demonstração
 
