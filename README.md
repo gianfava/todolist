@@ -76,10 +76,18 @@ Este projeto é uma aplicação web que permite aos usuários gerenciar uma list
     - No arquivo `src/main/java/br/com/todolist/controller/TarefaController.java`, adicione a anotação `@CrossOrigin(origins = "http://localhost:3000")` acima da classe `TarefaController` para permitir a comunicação com o frontend.
 
 5.  **Execute o backend:**
+
+    **Opção A: Via Linha de Comando**
     - No terminal, dentro da pasta `todolist`, execute:
       ```bash
       ./mvnw spring-boot:run
       ```
+    
+    **Opção B: Via IDE (Eclipse, STS, IntelliJ)**
+    - Importe o projeto `todolist` como um projeto Maven na sua IDE.
+    - Encontre o arquivo `TodolistApplication.java` no caminho `src/main/java/br/com/todolist/`.
+    - Clique com o botão direito no arquivo e selecione **"Run As" > "Java Application"** (ou a opção equivalente na sua IDE).
+
     A API estará rodando em `http://localhost:8080`.
 
 ### 2. Configuração do Frontend (React App)
