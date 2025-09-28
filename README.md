@@ -2,6 +2,12 @@
 
 Uma aplicação completa de lista de tarefas (To-Do List) com um backend robusto em Spring Boot e um frontend interativo em React.
 
+
+## Alunos:
+
+- FELIPE FERREIRA REZENDE
+- GIAN CARLO FAVA
+
 ## Visão Geral
 
 Este projeto é uma aplicação web que permite aos usuários gerenciar uma lista de tarefas. O backend é uma API RESTful que lida com as operações de negócio e a persistência de dados, enquanto o frontend oferece uma interface de usuário para interagir com a API.
@@ -114,3 +120,14 @@ A API expõe os seguintes endpoints no prefixo `/api/tarefas`:
 | `GET`  | `/api/tarefas/{id}`| Busca uma tarefa pelo ID.      |
 | `PUT`  | `/api/tarefas/{id}`| Atualiza uma tarefa existente. |
 | `DELETE`| `/api/tarefas/{id}`| Deleta uma tarefa.             |
+
+
+## Demonstração
+
+### Backend (Teste no Postman)
+
+<img src="https://github.com/gianfava/todolist/blob/main/todolist/printscreens/Slide1.PNG" alt="Teste da API no Postman" width="50%">
+
+### Frontend (Aplicação React)
+
+<img src="https://github.com/gianfava/todolist/blob/main/todolist/printscreens/Slide2.PNG" alt="Teste da API no Postman" width="50%">
